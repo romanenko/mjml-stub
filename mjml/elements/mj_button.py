@@ -120,7 +120,7 @@ class MjButton(BodyComponent):
             return None
 
         _box_widths = self.getBoxWidths()
-        borders = _box_widths.borders
+        borders = _box_widths['borders']
         innerPaddings = self.getShorthandAttrValue('inner-padding', 'left') + \
             self.getShorthandAttrValue('inner-padding', 'right')
         width_int = parsedWidth - innerPaddings - borders
